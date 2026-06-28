@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  
+  <style>
+    html,
+    body {
+      background-color: black !important;
+      color: #f8f9fa !important;
+overflow-x: hidden;
+    }
+
+
+    .dav {
+      font-size: 59px;
+      font-family: Arial, Helvetica, sans-serif;
+      white-space: nowrap;
+    }
+
+    .pad {
+      margin-top: 100px;
+      padding: 30px;
+    }
+
+    .txt {
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-weight: bold;
+    }
+
+    .word {
+      position: relative;
+      display: inline-block;
+      vertical-align: bottom !important;
+      overflow: hidden;
+
+    }
+
+    .word::before {
+      content: "David";
+      animation: words 8s infinite !important;
+    }
+
+    .word::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      border-right: 3px solid;
+      animation: dav 2s steps(11) infinite alternate, cursor 0.5s infinite !important;
+
+    }
+
+    @keyframes cursor {
+      50% {
+        border-left-color: black;
+
+      }
+    }
+
+    @keyframes words {
+
+      0%,
+      25% {
+        content: "David";
+      }
+
+      26%,
+      50% {
+        content: "A Web Developer";
+      }
+
+      51%,
+      75% {
+        content: "A  Marketter";
+      }
+
+      76%,
+      100% {
+        content: "A Designer";
+      }
+    }
+
+    @keyframes dav {
+      0% {
+        left: 0;
+      }
+
+      60% {
+        left: 100%;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+
+    .workk {
+      border: 2px solid;
+
+      border-radius: 20px;
+      width: 150px;
+      text-align: center;
+      color: black;
+      background: white;
+
+    }
+
+    .workkk {
+      background: black;
+      margin-top: 29px;
+      border: 1px solid gray;
+      padding: 18px;
+      border-radius: 16px;
+      color: white;
+    }
+
+    /*.workk:hover{
+        background:;
+        color:white;
+        font-size: large;
+      }*/
+    @media(max-width:400px) {
+      .dav {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        white-space: nowrap;
+      }
+ 
+      .u {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+
+      .Hire {
+        margin-top: 15px;
+
+      }
+
+      .d {
+        margin-top: 80px !important;
+      }
+
+      .pr {
+        position: absolute;
+        margin-top: -19px;
+        left: 70px;
+        background: #ff5a36;
+        padding: 10px;
+        border-radius: 6px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .imgg {
+        width: 300px;
+        margin-left: 25px;
+      }
+
+      .pro {
+        font-size: 13px;
+
+      }
+
+      .oo {
+        margin-bottom: 80px;
+      }
+
+      .stack {
+        margin-left: 20px !important;
+      }
+
+      .img3 {
+        margin: 0 !important;
+      }
+
+      .t {
+        font-size: 20px;
+        line-height: 20px;
+        margin-left: -70px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #bbb1b1;
+        margin-top: 20px;
+        max-width: 160%;
+
+
+      }
+
+      .tool {
+        margin-left: -59px;
+
+      }
+
+      .divv {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-left: -59px !important;
+        gap: 5px;
+
+      }
+
+      .mee {
+        color: #ff5a36;
+        margin-left: -60px;
+        font-size: 17px;
+      }
+
+      .am {
+        margin-left: -60px;
+        font-size: 45px;
+
+      }
+
+      .oo {
+        margin-left: 0 !important;
+      }
+
+      .pr {
+        margin-left: -50px !important;
+      }
+      .btn{
+      margin-left: 160px !important;
+      }
+      .img-side{
+        margin-left: 30px;
+      }
+      .y{
+        margin: 0 !important;
+        margin-bottom: 6px !important;
+      }
+      .pics{
+        width: 150px !important;
+      }
+    }
+
+    .d {
+      margin-top: 30px;
+
+    }
+
+    .pr {
+      position: absolute;
+      margin-top: -19px;
+      margin-left:150px !important;
+      background: #ff5a36;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #ffffff;
+    }
+
+    .hire {
+      color: white;
+      background: #ff5a36 !important;
+      border: none;
+    }
+
+    .line {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .bar {
+      background: black;
+    }
+
+    .pro {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .project {
+      margin-top: 100px;
+    }
+
+    .section {
+      background: #0A0A0A;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .serve {
+      letter-spacing: 3px;
+      font-size: 40px;
+    }
+
+    .do {
+      color: #ff5a36 !important;
+    }
+
+    .text-info {
+      color: #ff5a36 !important;
+
+    }
+
+    .da {
+      margin-top: 5px;
+    }
+
+    .oo {
+      margin-bottom: 80px;
+    }
+
+    .img2 {
+      width: 50px;
+      display: block;
+      padding: 10px;
+
+
+    }
+
+    .bg {
+      width: 100%;
+      min-height: 300px;
+      background: #1e1e1e;
+      border-radius: px;
+      transition: ALL 0.65S;
+      margin-top: 30px;
+      padding: 20px;
+    }
+
+
+    .img-main {
+      padding: 50px;
+    }
+
+    .bg:hover {
+      transform: translateY(-15px);
+      border: 1px solid #ff5a36;
+
+    }
+
+    .txtt {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .animate {
+      animation: appear linear;
+      animation-timeline: vie();
+      animation-range: entry 0 cover 30%;
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(60px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hh {
+      text-align: end;
+      margin-left: -50px;
+      position: fixed;
+      bottom: 20px;
+      z-index: 99;
+
+    }
+
+    @keyframes dav {
+      0% {
+        transform: translateY(0);
+      }
+
+      25% {
+        transform: translateY(-20px);
+      }
+
+    }
+
+    .uu {
+      color: white;
+      font-size: 50px !important;
+      animation: dav 2s ease-in-out infinite;
+      display: inline-block;
+    }
+
+    .mee {
+      color: #ff5a36;
+
+    }
+
+    .t {
+      font-size: 20px;
+      line-height: 32px;
+      width: 600px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #bbb1b1;
+    }
+
+    .padd {
+      padding: 30px;
+    }
+
+    .section3 {
+      margin-top: 50px;
+      /*  background:#0A0A0A;*/
+      padding: 30px;
+    }
+
+    .proof {
+      color: #ff5a36;
+    }
+
+    .bgg {
+      width: 100%;
+      height: 300px;
+      background: #1e1e1e;
+      border-radius: px;
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 35px;
+    }
+
+    .section2 {
+      background: rgb(23, 21, 21);
+
+    }
+
+    .iii {
+      width: 80px;
+      height: 80px;
+    }
+
+    .proof {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+
+    .client {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .log {
+      border-radius: 10px;
+      padding: 15px !important;
+      background: #1e1e1e;
+
+    }
+
+    .get {
+      color: #ff5a36;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+
+
+    .contact-card {
+      background: #1a1a20;
+      border-radius: 24px;
+      padding: 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-card::after {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      top: -150px;
+      right: -100px;
+      background: #ff5a36;
+      opacity: .13;
+      filter: blur(130px);
+    }
+
+    .sub-title {
+      color: #ff5a36;
+      margin-bottom: 15px;
+    }
+
+    .main-title {
+      font-size: 4.5rem;
+      font-weight: 700;
+      color: white;
+      line-height: 1;
+    }
+
+    .info {
+      color: #9d9d9d;
+      line-height: 1.9;
+      margin: 30px 0;
+    }
+
+    .links a {
+      display: block;
+      text-decoration: none;
+      color: #cfcfcf;
+      margin-bottom: 25px;
+    }
+
+    .links a:hover {
+      color: #ff5a36;
+    }
+
+    .custom-input {
+      background: transparent;
+      border: 1px solid #2f2f38;
+      color: white;
+      padding: 16px;
+      border-radius: 15px;
+    }
+
+    .custom-input::placeholder {
+      color: #777;
+    }
+
+    .custom-input:focus {
+      background: transparent;
+      color: white;
+      border-color: #ff5a36;
+      box-shadow: 0 0 0 .25rem rgba(255, 90, 54, .2);
+    }
+
+    label {
+      color: white;
+    }
+
+    .send-btn {
+      background: #ff5a36;
+      color: white;
+      padding: 12px 28px;
+      border: none;
+    }
+
+    .send-btn:hover {
+      background: #ff6c4c;
+      color: white;
+    }
+
+    @media (max-width:991.98px) {
+
+      .contact-card {
+        padding: 40px;
+      }
+
+      .main-title {
+        font-size: 3.5rem;
+      }
+    }
+
+    @media (max-width:767.98px) {
+
+      .contact-card {
+        padding: 25px;
+        border-radius: 18px;
+      }
+
+      .main-title {
+        font-size: 2.8rem;
+      }
+
+      .info {
+        font-size: .95rem;
+      }
+
+      .links a {
+        font-size: .95rem;
+      }
+
+      .custom-input {
+        padding: 14px;
+      }
+       .pr {
+        position: absolute;
+        margin-top: -19px;
+        left: -150px !important;
+        background: #ff5a36;
+        padding: 10px;
+        border-radius: 6px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .btnn{
+        margin-left: 170px !important;
+      }
+    }
+
+    @media (max-width:575.98px) {
+
+      .contact-card {
+        padding: 20px;
+      }
+
+      .main-title {
+        font-size: 2.3rem;
+      }
+
+     
+    }
+    .about{
+      color: #ff5a36;
+      margin-top: 20px;
+      font-size: 15px;
+    }
+    .bit{
+      font-size: 40px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .tool{
+      color: #ff5a36;
+      margin-left: 5px;
+    }
+.me{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px !important;
+}
+
+.lii:hover{
+color: #ff5a36 !important;
+}
+
+  </style>
+</head>
+
+<body class="">
+  <nav class="navbar navbar-expand-lg bar navbar-dark shadow-lg fixed-top " id="navbar">
+
+    <div class="container-fluid ms-5">
+      <!--- <a class="navbar-brand" href="#">Dav<i class="text-info">id</i></a>--->
+      <h3 class="da">Dav<i class="text-info">id</i></h3>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center ms-lg-5 u " id="collapsibleNavbar">
+        <ul class="navbar-nav  gap-lg-3 mx-auto" id="main">
+          <li class="nav-item me-5 ">
+            <a class="nav-link text-light text-decoration-underline lii ser" href="#services">Services</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link text-light lii" href="#about">About</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link text-light lii" href="#">Works</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link text-light lii" href="#review">Reviews</a>
+          </li>
+          <li class="nav-item me-5 lii">
+            <a class="nav-link text-light" href="#">Contact</a>
+          </li>
+        </ul>
+
+
+
+
+
+
+        <div class="ms-lg-auto me-3 Hire btnn">
+          <button type="submit" class="btn-outline-primary px-4 py-2 rounded-3 fw-bold bg-info hire ">Hire Me</button>
+        </div>
+
+
+
+        
+
+
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <div class="container px-lg-5 p-md-5 pad">
+    <div class="">
+    <div class="row">
+      <div class="c  col-lg-6 ">
+        <h3 class="text-info ms-2">Available for work</h3>
+        <h2 class="text-light mt-3 ms-2 dav col-sm-12 line">Hi, I'm <span class="text-info word"></span></h2>
+        <p class="text-muted fw-bold h2 mt-4 col-lg-9 txt">Social<span class="text-white"> Marketer &</span> <span
+            class="text-white">Frontend Developer</span>. I design and build digital products that people love to use —
+          fast, clean, and accessible.</p>
+
+
+
+        <div class="div d-flex gap-5">
+          <a href=" https://roserose67891-gif.github.io/tutweb/"
+            class="text-decoration-none workk d-block mt-4 px-2 py-3">View My Work  <i class="fa-solid fa-chevron-right d-inline"></i></a>
+          <a href="" class="text-decoration-none workkk d-block ">Get in touch</a>
+
+        </div>
+        <div class="container project d-flex gap-5">
+          <div class="first">
+            <h1 class="ms-3 y">50+</h1>
+            <p class="h5 pro">Project Done</p>
+          </div>
+
+          <div class="second">
+            <h1 class="ms-4 y">50+</h1>
+            <p class="h5 pro">Happy Clients</p>
+          </div>
+
+
+          <div class="third">
+            <h1 class="ms-3 y">5y</h1>
+            <p class="h5 pro">Experience</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6  d col-md-8  col-12 col-sm-6 oo mm ">
+        <img src="/image/WhatsApp Image 2026-06-08 at 11.24.56 PM.jpeg" class="img-fluid col-lg-7  rounded-2 mx-auto d-block">
+        <p class="pr">Open To Project</p>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="section container-fluid animate" id="services">
+    <div class="container">
+    <div class="about ms-5">
+      <h5 class="text-info do">WHAT I DO</h5>
+      <h2 class="serve">Services</h2>
+    </div>
+    <div class="row container m-auto animate">
+      <div class="col-12 col-lg-4 col-md-12">
+        <div class="box bg">
+          <div class="img-main">
+            <img src="/image/gradient-ui-ux-design-illustration_23-2151514787.avif" class="img-fluid img2 w-50 pics">
+          </div>
+          <h2 class="ms-5 mb-3 stack">UI/UX Design</h2>
+          <p class="ms-3 txtt">Intuitive, visually compelling interfaces that convert visitors into users and put
+            usability first.</p>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4 col-md-12">
+        <div class="box bg animate">
+          <div class="img-main">
+            <img src="/image/download div.png" class="img-fluid img2 w-50 pics">
+          </div>
+          <h2 class="ms-5 mb-3 stack">Frontend Dev</h2>
+          <p class="ms-3">Production-grade code with Bootstrap CSS and javascript, fully responsive, SEO-friendly and
+            blazing fast — no bloat, no heavy frameworks.</p>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-lg-4 col-md-12">
+        <div class="box bg">
+          <div class="img-main">
+            <img src="/image/87f2ba0c-4e32-4a5e-8774-a4fbbc14a2c9-cover.png" class="img-fluid img2 w-50 pics">
+          </div>
+          <h2 class="ms-5 mb-3 stack">Landing Pages</h2>
+          <p class="ms-3">High-converting pages for websites, apps and personal brands. Designed to communicate value
+            instantly and drive action from the first scroll.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+
+  <!--about me-->
+
+<div class="container-fluid p-3">
+  <div class="container">
+<div class="row g-3 align-items-center">
+<div class="col-12 col-lg-5  img-side">
+  <img src="/image/WhatsApp Image 2026-06-08 at 11.24.56 PM.jpeg" class="img-fluid col-10 col-lg-0 col-sm-7 rounded-3">
+</div>
+
+
+
+<div class=" col-12 col-lg-6">
+  
+  <h5 class="about ">ABOUT ME</h5>
+  <h2 class="bit">A bit about
+who I am</h2>
+
+<p class="fs-6 me">I'm David, a  Frontend developer and Marketter based in Nigeria with 5 years of experience shipping digital products for startups, agencies, and Coding. I thrive at the intersection of great design and clean code.</p>
+
+<p class="me">I believe great interfaces are invisible — they get out of the user's way. My work is fast, accessible and built to last. When I'm not coding, you'll find me hiking or hunting for a good espresso.</p>
+
+        <h3 class="tool">Stack & tools</h3>
+
+        <div class=" mt-4 ">
+          <span class="badge bg-gradient px-4 py-3 fs-6 rounded-pill me- ">Bootstrap</span>
+          <span class="badge bg-gradient px-4 py-3 fs-6 rounded-pill ms-1 ">Html/Css</span>
+          <span class="badge bg-gradient px-4 py-3 fs-6 rounded-pill ms-1 ">Javascript</span>
+          <span class="badge bg-gradient px-4  py-3 fs-6 rounded-pill badg ms-1">Git</span>
+          <span class="badge bg-gradient px-4 py-3 fs-6 rounded-pill ms-1">Github</span>
+        </div>
+       
+
+</div>
+</div>   
+</div>
+</div>
+
+  <div class="section3 container p-lg-0 " id="review">
+    <div class="what">
+      <h3 class="proof fw-bold">Social proof</h3>
+      <h2 class="fw-bold client">What clients say</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-4 col-md-12">
+
+        <div class="box bgg">
+          <span class="badge  text-light ms-4">
+            <i class="bi bi-star-fill"></i>
+          </span>
+
+          <span class="badge  text-light">
+            <i class="bi bi-star-fill"></i>
+          </span>
+
+          <span class="badge  text-light">
+            <i class="bi bi-star-fill"></i>
+          </span>
+
+          <span class="badge  text-light">
+            <i class="bi bi-star-fill"></i>
+          </span>
+
+          <span class="badge  text-light">
+            <i class="bi bi-star-fill"></i>
+          </span>
+
+
+          <p class="ms-3 txtt mt-3 p-2">David delivered our redesign in record time and the quality blew us away. Our
+            conversion rate jumped 28% in the first month. Absolutely recommend."</p>
+
+          <div class="img-mainn d-flex mt-4 ms-3">
+            <img src="/image/IMG_1954.JPG" class="img-fluid img2 rounded-pill iii">
+            <p class="fw-bold mt-2 ms-3">Taiwo Adebimpe</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4 col-md-12">
+
+        <div class="box bgg">
+          <div class="star mt-3 ms-4">
+            <span class="badge  text-light">
+              <i class="bi bi-star-fill"></i>
+            </span>
+
+            <span class="badge  text-light">
+              <i class="bi bi-star-fill"></i>
+            </span>
+
+            <span class="badge  text-light">
+              <i class="bi bi-star-fill"></i>
+            </span>
+
+            <span class="badge  text-light">
+              <i class="bi bi-star-fill"></i>
+            </span>
+
+            <span class="badge  text-light">
+              <i class="bi bi-star-fill"></i>
+            </span>
+          </div>
+
+
+          <p class="ms-3 txtt mt-2 p-2">"Working with David is a dream. He asks the right questions, moves fast, and the
+            final result always exceeds what we imagined. Our best hire of 2024."</p>
+
+          <div class="img-mainn d-flex mt-4 ms-3">
+            <img src="/image/80.jpg" class="img-fluid img2 rounded-pill iii">
+            <p class="fw-bold mt-2 ms-3">Thomas Renault</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4 col-md-12">
+
+        <div class="box bgg">
+          <div class="star mt-3 ms-4">
+            <span class="badge  text-light">
+              <i class="bi bi-star-fill"></i>
+            </span>
+
+            <span class="badge  text-light">
+              <i class="bi bi-star-fill"></i>
+            </span>
+
+            <span class="badge  text-light">
+              <i class="bi bi-star-fill"></i>
+            </span>
+
+            <span class="badge  text-light">
+              <i class="bi bi-star-fill"></i>
+            </span>
+
+            <span class="badge  text-light">
+              <i class="bi bi-star-fill"></i>
+            </span>
+          </div>
+
+          <p class="ms-3 txtt mt-3 ">"David delivered our redesign in record time and the quality blew us away. Our
+            conversion rate jumped 28% in the first month. Absolutely recommend."</p>
+
+
+          <div class="img-mainn d-flex mt-4 ms-3">
+            <img src="/image/80.jpg" class="img-fluid img2 rounded-pill iii">
+            <p class="fw-bold mt-2 ms-3">Thomas Renault</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container py-5">
+    <div class="contact-card">
+      <div class="row g-5">
+
+        <div class="col-12 col-lg-5">
+          <h6 class="sub-title">Get in touch</h6>
+
+          <h1 class="main-title">
+            Let's work <br>
+            together
+          </h1>
+
+          <p class="info">
+            I'm open to UI/UX and frontend missions, short or long-term.
+            Landing page, full product redesign, or just a second pair of eyes — let's talk.
+          </p>
+
+          <div class="links">
+            <a href="#"><i class="fa-solid fa-envelope"></i> davidolabode411@gmail.com</a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i> linkedin.com/in/davidolabode</a>
+            <a href="#"><i class="fa-brands fa-github"></i> github.com/davidolabode</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-7">
+          <form>
+            <label class="mb-2">Name </label>
+            <input type="text" class="form-control custom-input" placeholder="Jane Smith" id="name">
+            <p id="lpp"></p>
+
+            <label class="mt-4 mb-2">Email Address</label>
+            <input type="email" class="form-control custom-input" placeholder="jane@company.com" id="mail">
+
+ <p class="lp"></p>
+
+
+            <label class="mt-4 mb-2">Subject </label>
+            <input type="text" class="form-control custom-input" placeholder="Project Inquiry" id="sub">
+
+             <p class="lp"></p>
+
+
+            <label class="mt-4 mb-2">Message </label>
+            <textarea class="form-control custom-input" rows="5"></textarea id="mes">
+
+             <p class="lp"></p>
+
+
+            <button onclick="triggger(event)" class="btnn send-btn mt-4">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container-fluid hh">
+    <a href="https://wa.me/2348121232584" class=""><i class="bi bi-whatsapp fs-1 uu"></i></a>
+  </div>
+</body>
+<script src="/js/bootstrap.bundle.js"></script>
+<script src="error.js"></script>
+
+
+
+
+
+</html>
